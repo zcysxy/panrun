@@ -192,5 +192,5 @@ args = ["pandoc", input_file] + args + file_arg + ARGV[1..-1]
 
 STDERR.puts "panrun calling: " + args.join(' ')
 
-ENV['MERMAID_FILTER_SCALE'] = 5
+ENV['MERMAID_FILTER_SCALE'] = '5'
 exec *args
